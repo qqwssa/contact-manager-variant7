@@ -1,0 +1,102 @@
+﻿partial class ContactForm
+{
+    private System.ComponentModel.IContainer components = null;
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing && components != null) components.Dispose();
+        base.Dispose(disposing);
+    }
+    private void InitializeComponent()
+    {
+        this.nameLabel = new System.Windows.Forms.Label();
+        this.phoneLabel = new System.Windows.Forms.Label();
+        this.nameTextBox = new System.Windows.Forms.TextBox();
+        this.phoneNumberTextBox = new System.Windows.Forms.TextBox();
+        this.addContactButton = new System.Windows.Forms.Button();
+        this.removeContactButton = new System.Windows.Forms.Button();
+        this.searchLabel = new System.Windows.Forms.Label();
+        this.searchTextBox = new System.Windows.Forms.TextBox();
+        this.searchButton = new System.Windows.Forms.Button();
+        this.contactsListBox = new System.Windows.Forms.ListBox();
+        this.SuspendLayout();
+        this.nameLabel.Name = "nameLabel";
+        this.nameLabel.Location = new System.Drawing.Point(10, 8);
+        this.nameLabel.Size = new System.Drawing.Size(150, 18);
+        this.nameLabel.TabIndex = 0;
+        this.nameLabel.Text = "Имя";
+        this.Controls.Add(this.nameLabel);
+        this.phoneLabel.Name = "phoneLabel";
+        this.phoneLabel.Location = new System.Drawing.Point(170, 8);
+        this.phoneLabel.Size = new System.Drawing.Size(150, 18);
+        this.phoneLabel.TabIndex = 1;
+        this.phoneLabel.Text = "Телефон";
+        this.Controls.Add(this.phoneLabel);
+        this.nameTextBox.Name = "nameTextBox";
+        this.nameTextBox.Location = new System.Drawing.Point(10, 28);
+        this.nameTextBox.Size = new System.Drawing.Size(150, 23);
+        this.nameTextBox.TabIndex = 2;
+        this.nameTextBox.AccessibleName = "Имя";
+        this.Controls.Add(this.nameTextBox);
+        this.phoneNumberTextBox.Name = "phoneNumberTextBox";
+        this.phoneNumberTextBox.Location = new System.Drawing.Point(170, 28);
+        this.phoneNumberTextBox.Size = new System.Drawing.Size(150, 23);
+        this.phoneNumberTextBox.TabIndex = 3;
+        this.phoneNumberTextBox.AccessibleName = "Телефон";
+        this.Controls.Add(this.phoneNumberTextBox);
+        this.addContactButton.Name = "addContactButton";
+        this.addContactButton.Location = new System.Drawing.Point(10, 60);
+        this.addContactButton.Size = new System.Drawing.Size(100, 26);
+        this.addContactButton.TabIndex = 4;
+        this.addContactButton.Text = "Добавить";
+        this.addContactButton.Click += new System.EventHandler(this.AddContactButton_Click);
+        this.Controls.Add(this.addContactButton);
+        this.removeContactButton.Name = "removeContactButton";
+        this.removeContactButton.Location = new System.Drawing.Point(120, 60);
+        this.removeContactButton.Size = new System.Drawing.Size(100, 26);
+        this.removeContactButton.TabIndex = 5;
+        this.removeContactButton.Text = "Удалить";
+        this.removeContactButton.Click += new System.EventHandler(this.RemoveContactButton_Click);
+        this.Controls.Add(this.removeContactButton);
+        this.searchLabel.Name = "searchLabel";
+        this.searchLabel.Location = new System.Drawing.Point(10, 94);
+        this.searchLabel.Size = new System.Drawing.Size(250, 18);
+        this.searchLabel.TabIndex = 6;
+        this.searchLabel.Text = "Поиск по имени или номеру";
+        this.Controls.Add(this.searchLabel);
+        this.searchTextBox.Name = "searchTextBox";
+        this.searchTextBox.Location = new System.Drawing.Point(10, 114);
+        this.searchTextBox.Size = new System.Drawing.Size(200, 23);
+        this.searchTextBox.TabIndex = 7;
+        this.searchTextBox.AccessibleName = "Поиск";
+        this.Controls.Add(this.searchTextBox);
+        this.searchButton.Name = "searchButton";
+        this.searchButton.Location = new System.Drawing.Point(220, 112);
+        this.searchButton.Size = new System.Drawing.Size(80, 26);
+        this.searchButton.TabIndex = 8;
+        this.searchButton.Text = "Искать";
+        this.searchButton.Click += new System.EventHandler(this.SearchButton_Click);
+        this.Controls.Add(this.searchButton);
+        this.contactsListBox.Name = "contactsListBox";
+        this.contactsListBox.Location = new System.Drawing.Point(10, 148);
+        this.contactsListBox.Size = new System.Drawing.Size(450, 200);
+        this.contactsListBox.TabIndex = 9;
+        this.Controls.Add(this.contactsListBox);
+        this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        this.ClientSize = new System.Drawing.Size(484, 361);
+        this.Name = "ContactForm";
+        this.Text = "Управление контактами";
+        this.ResumeLayout(false);
+        this.PerformLayout();
+    }
+    private System.Windows.Forms.Label nameLabel;
+    private System.Windows.Forms.Label phoneLabel;
+    private System.Windows.Forms.TextBox nameTextBox;
+    private System.Windows.Forms.TextBox phoneNumberTextBox;
+    private System.Windows.Forms.Button addContactButton;
+    private System.Windows.Forms.Button removeContactButton;
+    private System.Windows.Forms.Label searchLabel;
+    private System.Windows.Forms.TextBox searchTextBox;
+    private System.Windows.Forms.Button searchButton;
+    private System.Windows.Forms.ListBox contactsListBox;
+}
