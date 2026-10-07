@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 public class ContactManager
 {
+    private readonly string contactsFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "contacts.txt");
     public List<Contact> Contacts
     {
         get;
@@ -39,13 +40,13 @@ public class ContactManager
     }
     private void SaveContacts()
     {
-        File.WriteAllLines("contacts.txt", Contacts.Select(c => $"{c.Name}|{c.PhoneNumber}"));
+        File.WriteAllLines(contactsFile, Contacts.Select(c => $"{c.Name}|{c.PhoneNumber}"));
     }
     private void LoadContacts()
     {
-        if (File.Exists("contacts.txt"))
+        if (File.Exists(contactsFile))
         {
-            var lines = File.ReadAllLines("contacts.txt");
+            var lines = File.ReadAllLines(contactsFile);
             foreach (var line in lines)
             {
                 var parts = line.Split('|');
