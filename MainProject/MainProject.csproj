@@ -25,6 +25,6 @@
     <Reference Include="System" /><Reference Include="System.Core" />
     <Reference Include="System.Drawing" /><Reference Include="System.Windows.Forms" />
   </ItemGroup>
-  <ItemGroup><Compile Include="Original.cs" /><Compile Include="Properties\AssemblyInfo.cs" /></ItemGroup>
+  <ItemGroup><Compile Include="Original.cs" /><Compile Include="Contact.cs" /><Compile Include="Properties\AssemblyInfo.cs" /></ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
